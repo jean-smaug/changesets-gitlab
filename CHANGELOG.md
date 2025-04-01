@@ -1,5 +1,21 @@
 # changesets-gitlab
 
+## 0.13.0
+
+### Minor Changes
+
+- [`e9adb24`](https://github.com/un-ts/changesets-gitlab/commit/e9adb245cc1152a2bc1516d4259b08f437879308) Thanks [@JounQin](https://github.com/JounQin)! - chore: housekeeping, bump all (dev) deps, add `module-sync` entry
+
+  fix: `commonjs` types entry
+
+- [#195](https://github.com/un-ts/changesets-gitlab/pull/195) [`e7cbdff`](https://github.com/un-ts/changesets-gitlab/commit/e7cbdff3854d7640884735179ab4cb695e62f3c2) Thanks [@WeslleyNasRocha](https://github.com/WeslleyNasRocha)! - feat: fetch the tags and push each one individually based on size of `packages` to be published and `api.FeatureFlags(projectId, 'git_push_create_all_pipelines')`
+
+- [#209](https://github.com/un-ts/changesets-gitlab/pull/209) [`4ca179c`](https://github.com/un-ts/changesets-gitlab/commit/4ca179c9b7fb0440a8194f97ad65d1294d19810b) Thanks [@JounQin](https://github.com/JounQin)! - feat: add a new optional `GITLAB_COMMENT_CUSTOM_LINKS` environment variable to override the links content referenced in the cli bot comment, use `{{ addChangesetUrl }}` placeholder for the dynamic URL to add a changeset
+
+- [#196](https://github.com/un-ts/changesets-gitlab/pull/196) [`b681513`](https://github.com/un-ts/changesets-gitlab/commit/b6815131caf733494a6f0e243ed64ad9441fc2b4) Thanks [@crysadrak](https://github.com/crysadrak)! - feat: add a new optional `GITLAB_COMMENT_DISCUSSION_AUTO_RESOLVE` environment variable to automatically resolve added discussion when changeset is present, if you want to always resolve the discussion, you should actually use `GITLAB_COMMENT_TYPE=note` instead, default `true`
+
+- [`efc0650`](https://github.com/un-ts/changesets-gitlab/commit/efc0650e5e4d9b92e50fddcd2b63576adc7c7428) Thanks [@JounQin](https://github.com/JounQin)! - refactor: publish releases with limited concurrency with [`p-limit`](https://github.com/sindresorhus/p-limit)
+
 ## 0.12.2
 
 ### Patch Changes
